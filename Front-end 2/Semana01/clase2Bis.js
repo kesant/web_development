@@ -17,7 +17,8 @@
 
 let marcador  = {
     usuario: 0,
-    computadora: 0
+    computadora: 0,
+    empate:0
 }
 
 const nombreDelJugador = iniciarJuego()
@@ -32,11 +33,19 @@ while (marcador.usuario < 2 && marcador.computadora < 2) {
         marcador.usuario++
     } else if (RESULTADO_PARTIDA.includes("perdiste")) {
         marcador.computadora++
+    }else {
+        marcador.empate++
     }
     console.log(marcador);
-    alert(`Resultado de la Ronda: \nScore del Usuario: ${marcador.usuario}\nScore del Computador: ${marcador.computadora}`);
+    alert(`Resultado de la Ronda: \nScore del Usuario: ${marcador.usuario}\nScore del Computador: ${marcador.computadora}\nScore de Empate : ${marcador.empate}`);
 }
-
+if (marcador.usuario>marcador.computadora){
+    alert(`Ganaste \n, partidas ganadas:${marcador.usuario}\npartidas perdidas ${marcador.computadora}\n partidas empatadas ${marcador.empate} `);
+}else if (marcador.usuario<marcador.computadora){
+    alert(`Perdiste \n, partidas ganadas:${marcador.usuario}\npartidas perdidas ${marcador.computadora}\n partidas empatadas ${marcador.empate} `);
+}else {
+    alert(`Empate \n, partidas ganadas:${marcador.usuario}\npartidas perdidas ${marcador.computadora}\n partidas empatadas ${marcador.empate} `);
+}
 
 
 /* -------------------------------------------------------------------------- */
