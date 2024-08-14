@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/backendDigital.iml" filepath="$PROJECT_DIR$/backendDigital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semana1/clase 2/clase 2.iml" filepath="$PROJECT_DIR$/semana1/clase 2/clase 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/semana1/semana1.iml" filepath="$PROJECT_DIR$/semana1/semana1.iml" />
       <module fileurl="file://$PROJECT_DIR$/semana2/semana2.iml" filepath="$PROJECT_DIR$/semana2/semana2.iml" />
     </modules>

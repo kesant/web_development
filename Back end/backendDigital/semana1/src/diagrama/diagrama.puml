@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+abstract class Empleado {
+-nombre: String
+-apellido: String
+-nroCuenta:String
+}
+class EmpleadoEfectivo {
+-sueldoBasico:double
+-descuentos:double
+-premios:premios
+
+}
+class EmpleadoContratado {
+-cantHoras:double
+-tarifaPorhora:double
+}
+EmpleadoContratado-u-|>Empleado
+EmpleadoEfectivo-u-|>Empleado
+
+
+@enduml
